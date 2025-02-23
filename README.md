@@ -49,7 +49,7 @@ Your-Repository-Name/
    ```sh
    cd backend
    npm install
-   node index.js  # Starts the backend server
+   node app.js  # Starts the backend server
    ```
 
 3. **Setup and run the frontend:**
