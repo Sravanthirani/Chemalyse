@@ -21,17 +21,19 @@ This project is a *full-stack web application* that predicts the *primary uses, 
 
 ## 📂 Project Structure
 
-📝 Your-Repository-Name
-│-- 💜 README.md
-│-- 📂 FrontEnd
-│   │-- 📂 frontend  # Contains all frontend-related files
-│   │   │-- 📄 App.js   # Main React component
-│   │   │-- 📄 App.css  # Stylesheet
-│-- 📂 backend
-│   │-- 📄 app.js          # Connects frontend and backend, handles image processing
-│   │-- 📄 OCR_text.py       # Runs PyTesseract for OCR
-│   │-- 📄 skincare_model.pkl # Random Forest trained model
-
+```
+Your-Repository-Name/
+│-- README.md
+│-- FrontEnd/
+│   ├── frontend/  # Contains all frontend-related files
+│   │   ├── App.js   # Main React component
+│   │   ├── App.css  # Stylesheet
+│-- backend/
+│   ├── app.js          # Connects frontend and backend, handles image processing
+│   ├── OCR_text.py      # Runs PyTesseract for OCR
+|   ├── generate.py      #Sends the extracted text to the model and gives the analysis
+│   ├── skincare_model.pkl # Random Forest trained model
+```
 
 ## 🚀 How It Works
 1. *User uploads an image* (from camera or gallery) via the frontend.
@@ -59,7 +61,7 @@ This project is a *full-stack web application* that predicts the *primary uses, 
    ```
 
 4. **Access the application**
-   - The backend should be running at: `http://localhost:5000`
+   - The backend should be running at: `http://localhost:5000` 
    - The frontend should be running at: `http://localhost:3000`.
 
 ## 👨‍💻 Contribution
@@ -75,4 +77,3 @@ This project is open-source under the *MIT License*.
 ---
 🔗 *Maintainer:* Sravanthi Rani Anupoju
 📩 *Contact:* anupojusravanthirani@gmail.com
-
