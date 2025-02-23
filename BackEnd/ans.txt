@@ -1,0 +1,14 @@
+Chemical: Niacinamide
+Use: Brightening
+Benefits: Reduces redness, controls oil
+Disadvantages: Can cause irritation in high concentrations
+
+Chemical: Ethanol
+Use: Brightening
+Benefits: Firms skin, reduces wrinkles
+Disadvantages: May cause mild irritation
+
+Chemical: Water
+Use: Brightening
+Benefits: Firms skin, reduces wrinkles
+Disadvantages: May cause mild irritation
