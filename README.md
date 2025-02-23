@@ -28,30 +28,22 @@ Your-Repository-Name/
 │   ├── frontend/  # Contains all frontend-related files
 │   │   ├── App.js   # Main React component
 │   │   ├── App.css  # Stylesheet
-│-- backend/
+│-- BackEnd/
 │   ├── app.js          # Connects frontend and backend, handles image processing
-│   ├── OCR_text.py      # Runs PyTesseract for OCR
-|   ├── generate.py      #Sends the extracted text to the model and gives the analysis
+│   ├── OCR_text.py       # Runs PyTesseract for OCR
+|   ├── generate.py 
 │   ├── skincare_model.pkl # Random Forest trained model
 ```
 
-## 🚀 How It Works
-1. *User uploads an image* (from camera or gallery) via the frontend.
-2. The image is sent to the *Node.js backend*, which processes it.
-3. *OCR_text.py* extracts chemical names using *PyTesseract*.
-4. Extracted names are passed to the **Random Forest model (skincare_model.pkl).**
-5. The model predicts and returns *chemical uses, benefits, and disadvantages*.
-6. The *results are displayed on the website*.
-
 ## 🔹 How to Run
+### **Method 1: Run Frontend and Backend Separately**
 1. **Download the repository** as a ZIP file from GitHub and extract it.
 2. **Setup and run the backend:**
    ```sh
-   cd backend
+   cd BackEnd
    npm install
    node app.js  # Starts the backend server
    ```
-
 3. **Setup and run the frontend:**
    Open a new terminal window and navigate to the `FrontEnd/frontend` folder:
    ```sh
@@ -59,10 +51,35 @@ Your-Repository-Name/
    npm install
    npm start  # Starts the frontend React app
    ```
-
 4. **Access the application**
-   - The backend should be running at: `http://localhost:5000` 
+   - The backend should be running at: `http://localhost:5000`
    - The frontend should be running at: `http://localhost:3000`.
+
+---
+
+### **Method 2: Run Both with a Single Command**
+1. **Download the repository** as a ZIP file from GitHub and extract it.
+2. **Setup dependencies in the root directory:**
+   ```sh
+   npm install concurrently
+   ```
+3. **Setup backend and frontend:**
+   ```sh
+   cd BackEnd
+   npm install
+   ```
+   ```sh
+   cd FrontEnd/frontend
+   npm install
+   ```
+4. **Run both frontend and backend together:**
+   Navigate to the root directory and run:
+   ```sh
+   npm start
+   ```
+5. **Access the application**
+   - The backend should be running at: `http://localhost:5000`
+   - The frontend should be running at: `http://localhost:3000`
 
 ## 👨‍💻 Contribution
 If you'd like to contribute:
@@ -77,3 +94,4 @@ This project is open-source under the *MIT License*.
 ---
 🔗 *Maintainer:* Sravanthi Rani Anupoju
 📩 *Contact:* anupojusravanthirani@gmail.com
+
